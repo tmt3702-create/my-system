@@ -1,0 +1,508 @@
+{
+  "Actor": {
+    "types": [
+      "character",
+      "npc",
+      "creature"
+    ],
+    "templates": {
+      "characteristics": {
+        "characteristics": {
+          "ws": {
+            "label": "CHAR.WS",
+            "abbreviation": "WS",
+            "initial": 20,
+            "advance": 0,
+            "modifier": 0
+          },
+          "bs": {
+            "label": "CHAR.BS",
+            "abbreviation": "BS",
+            "initial": 20,
+            "advance": 0,
+            "modifier": 0
+          },
+          "s": {
+            "label": "CHAR.S",
+            "abbreviation": "S",
+            "initial": 20,
+            "advance": 0,
+            "modifier": 0
+          },
+          "t": {
+            "label": "CHAR.T",
+            "abbreviation": "T",
+            "initial": 20,
+            "advance": 0,
+            "modifier": 0
+          },
+          "ag": {
+            "label": "CHAR.Ag",
+            "abbreviation": "Ag",
+            "initial": 20,
+            "advance": 0,
+            "modifier": 0
+          },
+          "int": {
+            "label": "CHAR.Int",
+            "abbreviation": "Int",
+            "initial": 20,
+            "advance": 0,
+            "modifier": 0
+          },
+          "wp": {
+            "label": "CHAR.WP",
+            "abbreviation": "WP",
+            "initial": 20,
+            "advance": 0,
+            "modifier": 0
+          },
+          "fel": {
+            "label": "CHAR.Fel",
+            "abbreviation": "Fel",
+            "initial": 20,
+            "advance": 0,
+            "modifier": 0
+          }
+        }
+      },
+      "status": {
+        "status": {
+          "wounds": {
+            "label": "STAT.Wounds",
+            "value": 8,
+            "max": 8
+          },
+          "fate": {
+            "label": "STAT.Fate",
+            "value": 0,
+            "max": 0
+          },
+          "fortune": {
+            "label": "STAT.Fortune",
+            "value": 0
+          },
+          "criticalWounds": {
+            "label": "STAT.CriticalWounds",
+            "value": 0
+          },
+          "insanityPoints": {
+            "label": "STAT.Insanity",
+            "value": 0,
+            "max": 0
+          },
+          "corruptionPoints": {
+            "label": "STAT.Corruption",
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      "details": {
+        "details": {
+          "species": {
+            "label": "DETAIL.Species",
+            "value": ""
+          },
+          "gender": {
+            "label": "DETAIL.Gender",
+            "value": ""
+          },
+          "age": {
+            "label": "DETAIL.Age",
+            "value": ""
+          },
+          "height": {
+            "label": "DETAIL.Height",
+            "value": ""
+          },
+          "weight": {
+            "label": "DETAIL.Weight",
+            "value": ""
+          },
+          "hairColor": {
+            "label": "DETAIL.HairColor",
+            "value": ""
+          },
+          "eyeColor": {
+            "label": "DETAIL.EyeColor",
+            "value": ""
+          },
+          "distinguishingMarks": {
+            "label": "DETAIL.DistinguishingMarks",
+            "value": ""
+          },
+          "biography": {
+            "label": "DETAIL.Biography",
+            "value": ""
+          },
+          "gmNotes": {
+            "label": "DETAIL.GMNotes",
+            "value": ""
+          },
+          "size": {
+            "label": "DETAIL.Size",
+            "value": "average"
+          },
+          "movement": {
+            "label": "DETAIL.Movement",
+            "value": 4
+          }
+        }
+      }
+    },
+    "character": {
+      "templates": [
+        "characteristics",
+        "status",
+        "details"
+      ],
+      "experience": {
+        "total": 0,
+        "spent": 0
+      },
+      "career": {
+        "current": "",
+        "rank": 1,
+        "completed": []
+      },
+      "ambitions": {
+        "personal": {
+          "shortTerm": "",
+          "longTerm": ""
+        },
+        "party": {
+          "name": "",
+          "shortTerm": "",
+          "longTerm": ""
+        }
+      }
+    },
+    "npc": {
+      "templates": [
+        "characteristics",
+        "status",
+        "details"
+      ]
+    },
+    "creature": {
+      "templates": [
+        "characteristics",
+        "status",
+        "details"
+      ],
+      "traits": {
+        "label": "CREATURE.Traits",
+        "value": ""
+      }
+    }
+  },
+  "Item": {
+    "types": [
+      "skill",
+      "talent",
+      "career",
+      "weapon",
+      "armour",
+      "ammunition",
+      "trapping",
+      "spell",
+      "prayer",
+      "injury",
+      "disease",
+      "mutation",
+      "container",
+      "money"
+    ],
+    "templates": {
+      "description": {
+        "description": {
+          "value": ""
+        },
+        "gmDescription": {
+          "value": ""
+        }
+      },
+      "physical": {
+        "weight": {
+          "value": 0
+        },
+        "encumbrance": {
+          "value": 0
+        },
+        "quantity": {
+          "value": 1
+        }
+      },
+      "cost": {
+        "price": {
+          "gc": 0,
+          "ss": 0,
+          "bp": 0
+        },
+        "availability": {
+          "value": ""
+        }
+      }
+    },
+    "skill": {
+      "templates": [
+        "description"
+      ],
+      "characteristic": {
+        "value": "ws"
+      },
+      "type": {
+        "value": "basic"
+      },
+      "advances": {
+        "value": 0
+      },
+      "specialization": {
+        "value": ""
+      }
+    },
+    "talent": {
+      "templates": [
+        "description"
+      ],
+      "type": {
+        "value": "general"
+      },
+      "maxRanks": {
+        "value": 1
+      },
+      "ranks": {
+        "value": 1
+      },
+      "prerequisites": {
+        "value": ""
+      }
+    },
+    "career": {
+      "templates": [
+        "description"
+      ],
+      "class": {
+        "value": ""
+      },
+      "entries": {
+        "value": []
+      },
+      "exits": {
+        "value": []
+      },
+      "rank1": {
+        "characteristics": [],
+        "skills": [],
+        "talents": [],
+        "trappings": []
+      },
+      "rank2": {
+        "characteristics": [],
+        "skills": [],
+        "talents": [],
+        "trappings": []
+      },
+      "rank3": {
+        "characteristics": [],
+        "skills": [],
+        "talents": [],
+        "trappings": []
+      },
+      "rank4": {
+        "characteristics": [],
+        "skills": [],
+        "talents": [],
+        "trappings": []
+      }
+    },
+    "weapon": {
+      "templates": [
+        "description",
+        "physical",
+        "cost"
+      ],
+      "damage": {
+        "value": ""
+      },
+      "reach": {
+        "value": ""
+      },
+      "range": {
+        "value": ""
+      },
+      "type": {
+        "value": "melee"
+      },
+      "equipped": {
+        "value": false
+      },
+      "twoHanded": {
+        "value": false
+      },
+      "offhand": {
+        "value": false
+      }
+    },
+    "armour": {
+      "templates": [
+        "description",
+        "physical",
+        "cost"
+      ],
+      "type": {
+        "value": ""
+      },
+      "ap": {
+        "head": 0,
+        "lArm": 0,
+        "rArm": 0,
+        "lLeg": 0,
+        "rLeg": 0,
+        "body": 0
+      },
+      "worn": {
+        "value": false
+      }
+    },
+    "ammunition": {
+      "templates": [
+        "description",
+        "physical",
+        "cost"
+      ],
+      "type": {
+        "value": ""
+      },
+      "damage": {
+        "value": ""
+      },
+      "range": {
+        "value": ""
+      }
+    },
+    "trapping": {
+      "templates": [
+        "description",
+        "physical",
+        "cost"
+      ],
+      "type": {
+        "value": ""
+      }
+    },
+    "spell": {
+      "templates": [
+        "description"
+      ],
+      "lore": {
+        "value": ""
+      },
+      "castingNumber": {
+        "value": 0
+      },
+      "range": {
+        "value": ""
+      },
+      "duration": {
+        "value": ""
+      },
+      "target": {
+        "value": ""
+      },
+      "damage": {
+        "value": ""
+      },
+      "memorized": {
+        "value": false
+      }
+    },
+    "prayer": {
+      "templates": [
+        "description"
+      ],
+      "god": {
+        "value": ""
+      },
+      "type": {
+        "value": "blessing"
+      },
+      "castingNumber": {
+        "value": 0
+      },
+      "range": {
+        "value": ""
+      },
+      "duration": {
+        "value": ""
+      },
+      "target": {
+        "value": ""
+      },
+      "damage": {
+        "value": ""
+      }
+    },
+    "injury": {
+      "templates": [
+        "description"
+      ],
+      "severity": {
+        "value": "minor"
+      },
+      "location": {
+        "value": ""
+      }
+    },
+    "disease": {
+      "templates": [
+        "description"
+      ],
+      "contraction": {
+        "value": ""
+      },
+      "incubation": {
+        "value": ""
+      },
+      "duration": {
+        "value": ""
+      }
+    },
+    "mutation": {
+      "templates": [
+        "description"
+      ],
+      "type": {
+        "value": "physical"
+      }
+    },
+    "container": {
+      "templates": [
+        "description",
+        "physical",
+        "cost"
+      ],
+      "capacity": {
+        "value": 0
+      },
+      "carries": {
+        "value": 0
+      },
+      "wearable": {
+        "value": false
+      }
+    },
+    "money": {
+      "templates": [
+        "description"
+      ],
+      "denomination": {
+        "value": "gc"
+      },
+      "quantity": {
+        "value": 0
+      }
+    }
+  }
+}

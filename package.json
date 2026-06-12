@@ -1,0 +1,33 @@
+{
+  "name": "wfrp2e",
+  "version": "1.0.0",
+  "description": "Warhammer Fantasy Roleplay 2nd Edition - Foundry VTT System",
+  "type": "module",
+  "scripts": {
+    "build": "rollup --config rollup.config.mjs --watch",
+    "release": "rollup --config rollup.config.mjs",
+    "pack": "node dbpacker.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmt3702-create/my-system.git"
+  },
+  "keywords": [
+    "foundryvtt",
+    "fvtt",
+    "wfrp",
+    "wfrp2e",
+    "warhammer",
+    "fantasy"
+  ],
+  "author": "WFRP2e Conversion Team",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@foundryvtt/foundryvtt-cli": "^1.0.2",
+    "cross-env": "^7.0.3",
+    "rollup": "^4.59.0",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "sass": "^1.85.1"
+  }
+}

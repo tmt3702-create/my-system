@@ -1,0 +1,90 @@
+{
+  "id": "wfrp2e",
+  "title": "Warhammer Fantasy Roleplay 2nd Edition",
+  "description": "A comprehensive system for running grim and perilous games of Warhammer Fantasy Roleplay 2nd Edition in the Foundry VTT environment.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "WFRP2e Conversion Team",
+      "discord": "your-discord-here"
+    }
+  ],
+  "esmodules": [
+    "src/wfrp2e.js"
+  ],
+  "styles": [
+    "style/wfrp2e.css"
+  ],
+  "packs": [
+    {
+      "name": "skills",
+      "label": "Skills",
+      "system": "wfrp2e",
+      "path": "./packs/skills",
+      "type": "Item"
+    },
+    {
+      "name": "talents",
+      "label": "Talents",
+      "system": "wfrp2e",
+      "path": "./packs/talents",
+      "type": "Item"
+    },
+    {
+      "name": "careers",
+      "label": "Careers",
+      "system": "wfrp2e",
+      "path": "./packs/careers",
+      "type": "Item"
+    },
+    {
+      "name": "spells",
+      "label": "Spells",
+      "system": "wfrp2e",
+      "path": "./packs/spells",
+      "type": "Item"
+    },
+    {
+      "name": "prayers",
+      "label": "Prayers",
+      "system": "wfrp2e",
+      "path": "./packs/prayers",
+      "type": "Item"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "media": [
+    {
+      "type": "cover",
+      "url": "https://images.unsplash.com/photo-1606160683224-3d9e9f55ead4?w=900&h=600&fit=crop"
+    }
+  ],
+  "flags": {
+    "hotReload": {
+      "extensions": ["css", "hbs", "json"]
+    }
+  },
+  "initiative": "@characteristics.ag.value + 1d10",
+  "grid": {
+    "distance": 2,
+    "units": "yd",
+    "type": 1,
+    "diagonals": 4
+  },
+  "primaryTokenAttribute": "status.wounds",
+  "compatibility": {
+    "minimum": 14,
+    "verified": 14,
+    "maximum": 14
+  },
+  "socket": true,
+  "manifest": "https://github.com/tmt3702-create/my-system/releases/latest/download/system.json",
+  "download": "https://github.com/tmt3702-create/my-system/releases/download/1.0.0/wfrp2e.zip",
+  "url": "https://github.com/tmt3702-create/my-system"
+}
